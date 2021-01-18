@@ -8,3 +8,8 @@ value = input("How old are you? ")
 next_age = return_age(value)
 
 print("You will be {} years old next year.".format(next_age))
+
+
+if not (number %2 == 0):
+    print ("the number is odd.")
+    
