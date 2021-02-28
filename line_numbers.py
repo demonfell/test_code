@@ -1,22 +1,19 @@
+#!/usr/bin/env python3
 import sys
 from os import path
 
-file_to_modify = sys.argv[1]
+file_to_modify = sys.argv[1] 
 
-# currently, the script will operate on a file that does not exist
-# and produce an empty file. I'd like to wok around that. Looking at 
-# solution from https://docs.python.org/3/tutorial/errors.html
-# try: 
-#    path.isfile(file_to_modify)
-# except: 
-#    raise Exception 
-#    print("File must exist.")
-    
 try: 
-    with open(file_to_modify, 'r') as fin:
-        file_data = fin.readlines()
+    fin = open(file_to_modify, 'r')
+    file_data = fin.readlines()
+    fin.close()
+
+except FileNotFoundError:
+        print('File must exist')
+        sys.exit(1)
 except:
-    print("File must be readable.") 
+    print('File must be readable.')
 
 replacement_data = []
 try:
