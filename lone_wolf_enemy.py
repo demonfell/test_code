@@ -4,7 +4,7 @@ class LoneWolfEnemy:
     enemy_properties = {
                     'giak': {'pretty_race':'Giak', 'cs_lower':10, 'cs_upper':12, 'end_lower': 10, 'end_upper': 15, 'immunity':''},
                     'dark_human': {'pretty_race':'Dark Human', 'cs_lower':12, 'cs_upper':14, 'end_lower': 13, 'end_upper': 18, 'immunity':''},
-                    'gourgaz': {'pretty_race':'Gougaz', 'cs_lower':12, 'cs_upper':17, 'end_lower': 28, 'end_upper': 30, 'immunity':'mindblast'}
+                    'gourgaz': {'pretty_race':'Gourgaz', 'cs_lower':12, 'cs_upper':17, 'end_lower': 28, 'end_upper': 30, 'immunity':'mindblast'}
     }
 
     def __init__(self, race):
